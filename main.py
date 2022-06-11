@@ -122,10 +122,6 @@ game_message = test_font.render('Press Space To Run', False, (111, 196, 169))
 game_message_rect = game_message.get_rect(center = (400, 330))
 obstacle_timer = pygame.USEREVENT + 1
 pygame.time.set_timer(obstacle_timer, randint(1500, 2500))
-snail_animation_timer = pygame.USEREVENT + 2
-pygame.time.set_timer(snail_animation_timer, 500)
-fly_animation_timer = pygame.USEREVENT + 3
-pygame.time.set_timer(fly_animation_timer, 200)
 while True:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
